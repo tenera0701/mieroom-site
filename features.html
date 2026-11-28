@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>機能・活用事例｜ミエルーム｜賃貸仲介のためのAI業務管理ツール</title>
+<meta name="description" content="ミエルームの主要機能と活用事例。申込・入金管理、成績可視化、接客管理、反響分析、物件コンバータ、業者間サイト連携（物確・物件検索）、LINE・SMS追客、経理・給与まで、賃貸仲介の現場でどう使うかを機能別に紹介します。">
+<link rel="canonical" href="https://mieroom.cloud/features.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ミエルーム">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="機能・活用事例｜ミエルーム｜賃貸仲介のためのAI業務管理ツール">
+<meta property="og:description" content="ミエルームの主要機能と活用事例。申込・入金管理、成績可視化、接客管理、反響分析、物件コンバータ、業者間サイト連携（物確・物件検索）、LINE・SMS追客、経理・給与まで、賃貸仲介の現場でどう使うかを機能別に紹介します。">
+<meta property="og:url" content="https://mieroom.cloud/features.html">
+<meta property="og:image" content="https://mieroom.cloud/assets/og-mieroom.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"ミエルーム","item":"https://mieroom.cloud/"},
+  {"@type":"ListItem","position":2,"name":"機能・活用事例","item":"https://mieroom.cloud/features.html"}
+]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/bp-bg.js" defer></script>
+<style>
+/* hero */
+.fl-hero{position:relative;overflow:hidden;background:
+   radial-gradient(900px 480px at 82% -8%, #d8f2ea 0%, transparent 62%),
+   radial-gradient(700px 500px at 8% 110%, #fdeee7 0%, transparent 60%),
+   linear-gradient(180deg,#fbfdfc 0%, #f1faf6 100%);
+   text-align:center;padding:74px 0 70px}
+.fl-hero .wrap{position:relative;z-index:1}
+.fl-hero h1{font-size:42px;font-weight:900;margin:16px 0 0;line-height:1.36}
+.fl-hero p{color:var(--ink-2);font-size:17px;font-weight:500;margin:18px auto 0;max-width:680px}
+@media(max-width:680px){.fl-hero h1{font-size:clamp(22px,6.8vw,30px)}}
+
+/* filter */
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 44px;max-width:840px}
+.fchip{font-family:"Zen Kaku Gothic New";font-weight:700;font-size:13.5px;color:var(--ink-2);background:#fff;border:1.5px solid var(--line);padding:9px 18px;border-radius:999px;cursor:pointer;transition:all .2s ease}
+.fchip:hover{border-color:var(--sky-2);background:var(--sky)}
+.fchip.on{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 10px 22px -10px rgba(20,160,133,.6)}
+
+/* grid */
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.case-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .35s var(--ease-bounce), box-shadow .35s ease}
+.case-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.case-card .visual{position:relative;height:168px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.case-card .visual .ci{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(14,80,68,.4);position:relative;z-index:1}
+.case-card .visual .ci svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:2}
+.case-card .visual .gloss{position:absolute;inset:0;opacity:.5}
+.case-card .visual.shot{padding:0;background:#0a201c;align-items:stretch;justify-content:flex-start}
+.case-card .visual.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:left top}
+.case-card:hover .visual .ci{animation:bobIcon 1.2s ease-in-out infinite}
+.case-card .body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.case-card .cno{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:11.5px;letter-spacing:.12em;color:var(--blue)}
+.case-card .cat{font-size:11px;font-weight:700;color:var(--ink-3);background:var(--bg-soft);border:1px solid var(--line);padding:3px 10px;border-radius:999px}
+.case-card .ctop{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.case-card h3{font-size:18px;font-weight:900;line-height:1.5;margin-bottom:10px;text-wrap:balance}   /* 行の長さをそろえて、最後の行だけ短くなるのを防ぐ */
+.case-card h3 .ph{display:inline-block}   /* 文節ごとに包んで、その切れ目でだけ折り返す（「一／斉出力」のような語の途中の改行を、Safari でも防ぐ） */
+.case-card p{font-size:13.5px;color:var(--ink-2);font-weight:500;flex:1}
+.case-card .more{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-family:"Zen Kaku Gothic New";font-weight:700;font-size:13.5px;color:var(--blue)}
+.case-card .more .arr{transition:transform .25s ease}
+.case-card:hover .more .arr{transform:translateX(4px)}
+.case-card.hide{display:none}
+@media(max-width:760px){.case-grid{grid-template-columns:1fr}}
+
+/* cta band */
+.cta-band{background:var(--ink);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(800px 400px at 80% 0%, rgba(43,191,163,.3),transparent 60%)}
+.cta-band .wrap{position:relative;z-index:1}
+.cta-band h2{font-size:30px;font-weight:900}
+.cta-band .cta-row{display:flex;gap:14px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.cta-band .btn-primary{background:#fff;color:var(--blue)}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '28086413637650888');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=28086413637650888&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style id="mp-nav-fit">
+/* 狭い画面ではヘッダーのボタンを小さくして、右にはみ出さないようにする */
+@media (max-width: 640px) {
+  .nav-cta { gap: 6px; }
+  .nav-cta .btn { padding: 9px 11px; font-size: 13px; }
+}
+</style>
+<script src="https://app.mieroom.cloud/hp-t/pHyi13lwBdN9UKYof5hp8It5.js" async data-mieroom-hp></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/logo-mark-sm.webp" alt="ミエルーム">
+      <span class="name"><b>ミエ</b><i>ルーム</i></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">ホーム</a>
+      <a href="features.html" class="on">機能・事例</a>
+      <a href="compare.html">比較</a>
+      <a href="blog.html">ブログ</a>
+      <a href="index.html#faq">料金</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="https://app.mieroom.cloud/app-login" style="border-color:transparent;opacity:.8">ログイン</a>
+      <a class="btn btn-doc" href="request.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>資料請求</a>
+      <a class="btn btn-line btn-line-sub" href="https://line-harness.teneramente0701.workers.dev/r/lp" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.3c0 4.1 3.6 7.5 8.5 8.1.3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c-.1.4-.4 1.5 1.3.8s8.9-5.2 12.1-9c2.2-2.4-1.2-10.3-12.7-10.3Z"/></svg>
+        LINEで相談
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="fl-hero">
+  <span class="blob" style="width:300px;height:300px;top:-80px;right:-50px;background:radial-gradient(circle,#74d3bd,#bdeede);animation:sway 9s ease-in-out infinite"></span>
+  <span class="blob" style="width:220px;height:220px;bottom:-60px;left:-80px;background:radial-gradient(circle,#f6b69c,#fcdcce);animation:sway2 11s ease-in-out infinite"></span>
+  <span class="deco ring" style="width:110px;height:110px;top:60px;left:14%;border-width:8px;border-color:rgba(20,160,133,.14);animation:swayRing 13s ease-in-out infinite"></span>
+  <span class="deco" style="width:18px;height:18px;bottom:70px;right:18%;background:var(--peach);opacity:.45;animation:sway 7s ease-in-out infinite"></span>
+  <div class="wrap">
+    <span class="eyebrow">FEATURES &amp; CASE STUDIES</span>
+    <h1>賃貸仲介の現場仕事を、<br><span class="u-blue">まるごと</span>ひとつのアプリに。</h1>
+    <p>申込・入金から売上、反響、接客、契約書類、物件入力、業者間サイト連携、経理まで。ミエルームの主要機能が、現場でどう業務を変えるのかを機能別に紹介します。</p>
+  </div>
+</section>
+
+<!-- LIST -->
+<section style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="filters" id="filters">
+      <button class="fchip on" data-cat="all">すべて</button>
+      <button class="fchip" data-cat="payment">申込・入金管理</button>
+      <button class="fchip" data-cat="performance">成績可視化</button>
+      <button class="fchip" data-cat="service">接客管理</button>
+      <button class="fchip" data-cat="lead">反響分析</button>
+      <button class="fchip" data-cat="form">フォーム自動取込</button>
+      <button class="fchip" data-cat="mail">メール対応</button>
+      <button class="fchip" data-cat="floorplan">間取り作成</button>
+      <button class="fchip" data-cat="contract">契約書類</button>
+      <button class="fchip" data-cat="bukken">物件入力</button>
+      <button class="fchip" data-cat="extension">業者間サイト連携</button>
+      <button class="fchip" data-cat="linesms">LINE・SMS</button>
+      <button class="fchip" data-cat="backoffice">バックオフィス</button>
+    </div>
+    <div class="case-grid stagger" id="grid">
+      <div class="case-card" data-cat="payment">
+        <div class="visual shot"><img src="assets/app-moushikomi.webp" alt="申込管理表の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-01</span><span class="cat">申込・入金管理</span></div>
+          <h3><span class="ph">申込・</span><span class="ph">入金・</span><span class="ph">未入金を</span><span class="ph">ひとつの</span><span class="ph">表で</span><span class="ph">管理し、</span><span class="ph">回収漏れをゼロに</span></h3>
+          <p>申込から入金確認までをひとつの管理表に集約。申込一覧・入金済み・未入金をワンクリックで切替、仲手やADの入金状況、店長承認までまとめて管理。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="performance">
+        <div class="visual shot"><img src="assets/app-uriage.webp" alt="売上分析の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-02</span><span class="cat">成績可視化</span></div>
+          <h3><span class="ph">スタッフの</span><span class="ph">接客・</span><span class="ph">反響成績を</span><span class="ph">自動で</span><span class="ph">ランキング化し、</span><span class="ph">評価と</span><span class="ph">育成に活かす</span></h3>
+          <p>スタッフ別の反響数・接客数・申込数・成約率・目標達成率を自動でランキング化。会議を待たずに成績が見え、評価の納得感と育成スピードが上がります。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="service">
+        <div class="visual shot"><img src="assets/app-sekkyaku.webp" alt="接客管理表の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-03</span><span class="cat">接客管理</span></div>
+          <h3><span class="ph">接客数・</span><span class="ph">他決・</span><span class="ph">申込が</span><span class="ph">一目で</span><span class="ph">分かる</span><span class="ph">接客管理表で、</span><span class="ph">対応の質を底上げ</span></h3>
+          <p>来店した顧客の接客状況を一覧で管理。対応種別・申込・他決などのステータスを記録し、接客数・申込率を自動集計。誰の接客が成果につながっているかが見えます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="lead">
+        <div class="visual shot"><img src="assets/app-hankyo.webp" alt="反響管理表の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-04</span><span class="cat">反響分析</span></div>
+          <h3><span class="ph">媒体別の</span><span class="ph">費用対効果を</span><span class="ph">可視化し、</span><span class="ph">広告の</span><span class="ph">垂れ流しを</span><span class="ph">止めて</span><span class="ph">予算を最適配分</span></h3>
+          <p>ポータル媒体ごとの反響数・成約・広告費を集計し費用対効果を可視化。どの媒体に予算を寄せるべきかが数字で分かり、効かない広告の垂れ流しを止められます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="form">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-05</span><span class="cat">フォーム自動取込</span></div>
+          <h3><span class="ph">予約・</span><span class="ph">来店・</span><span class="ph">申込フォームから、</span><span class="ph">入力が</span><span class="ph">そのまま</span><span class="ph">管理表へ</span><span class="ph">自動で</span><span class="ph">取り込まれる</span></h3>
+          <p>予約・来店・申込フォームをQRやURLで配布。顧客が入力した内容が予約カレンダーや接客管理表、申込一覧へ自動で取り込まれ、手入力の転記作業がなくなります。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="mail">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-06</span><span class="cat">メール対応</span></div>
+          <h3><span class="ph">ポータル</span><span class="ph">反響メールを</span><span class="ph">チャット形式で</span><span class="ph">対応、</span><span class="ph">返信し忘れは</span><span class="ph">アラートで防止</span></h3>
+          <p>ポータルからの反響メールを自動で取り込み、顧客ごとにチャット形式で表示。そのまま返信でき、未返信の反響はアラートで知らせるので、対応漏れによる機会損失を防げます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="floorplan">
+        <div class="visual" style="background:linear-gradient(135deg,#eef9f5,#dff2ec)">
+          <div class="ci" style="background:linear-gradient(180deg,#2bbfa3,#14a085)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 11h7M10 3v8M10 14v7M10 17h11"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-07</span><span class="cat">間取り作成</span></div>
+          <h3><span class="ph">下絵を</span><span class="ph">なぞるだけで、</span><span class="ph">きれいな間取り図を</span><span class="ph">社内で内製化</span></h3>
+          <p>手書きやポータルの間取りを下絵として取り込み、なぞるだけできれいな間取り図を作成。フォルダで物件ごとに整理でき、印刷・保存も簡単。間取り作成の外注をなくせます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="contract">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-08</span><span class="cat">契約書類</span></div>
+          <h3><span class="ph">御社の</span><span class="ph">契約書</span><span class="ph">フォーマットに、</span><span class="ph">顧客情報を</span><span class="ph">自動で</span><span class="ph">差し込んで</span><span class="ph">書類を一括作成</span></h3>
+          <p>御社が普段使っている契約書・重説などのExcelフォーマットをそのままアップロード。顧客情報を自動で差し込み、書類を作成・一括Excel/PDF出力。書式を変えずに転記作業だけをなくせます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="bukken">
+        <div class="visual shot"><img src="assets/guide/converter-new.webp" alt="物件コンバータの物件入力画面（デモ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-09</span><span class="cat">物件入力</span></div>
+          <h3><span class="ph">物件を</span><span class="ph">1回</span><span class="ph">入力するだけで、</span><span class="ph">16媒体へ</span><span class="ph">連動項目に</span><span class="ph">合わせて一斉出力</span></h3>
+          <p>SUUMO・HOME'S・at home・CHINTAIなど16媒体向けのCSVを一斉出力。出力前の掲載テスト・禁止単語チェック、AIによるPRコメント自動生成つき。媒体ごとの入力し直しがなくなります。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="extension">
+        <div class="visual shot"><img src="assets/app-bukkaku.webp" alt="物件確認（物確）の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-10</span><span class="cat">業者間サイト連携</span></div>
+          <h3><span class="ph">募集状況の</span><span class="ph">一括確認と</span><span class="ph">定期ウォッチで、</span><span class="ph">掲載終了・</span><span class="ph">条件変更を</span><span class="ph">自動キャッチ</span></h3>
+          <p>自社の掲載物件が“今”も募集中かをワンクリックで一括確認。電話で聞いた結果も履歴に残り、定期ウォッチが新着・掲載終了・条件変更の差分を知らせます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="extension">
+        <div class="visual" style="background:linear-gradient(135deg,#eef9f5,#dff2ec)">
+          <div class="ci" style="background:linear-gradient(180deg,#2bbfa3,#14a085)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M8 11h6M11 8v6"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-11</span><span class="cat">業者間サイト連携</span></div>
+          <h3><span class="ph">業者間サイトと</span><span class="ph">ポータル、</span><span class="ph">46サイトを</span><span class="ph">まとめて検索</span></h3>
+          <p>条件を一度入れるだけで、業者間サイトと一般ポータルのあわせて46サイトから物件を探せます。サイトごとに検索し直す往復がなくなります。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="extension">
+        <div class="visual shot"><img src="assets/app-shokihiyo.webp" alt="初期費用計算の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-12</span><span class="cat">業者間サイト連携</span></div>
+          <h3><span class="ph">接客中に</span><span class="ph">その場で</span><span class="ph">初期費用の</span><span class="ph">見積を</span><span class="ph">作成し、</span><span class="ph">URLで</span><span class="ph">お客様のスマホへ</span></h3>
+          <p>賃料と入居予定日から日割り・次月家賃・一時金まで自動計算。業者間サイトの物件ページからワンクリックで自動入力し、物件写真つきの見積URLを発行できます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="extension">
+        <div class="visual" style="background:linear-gradient(135deg,#eef9f5,#dff2ec)">
+          <div class="ci" style="background:linear-gradient(180deg,#2bbfa3,#14a085)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 8h6M7 11h4M15 8h3v6h-3zM7 14h11"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-13</span><span class="cat">業者間サイト連携</span></div>
+          <h3><span class="ph">物件マスタから</span><span class="ph">募集図面</span><span class="ph">（マイソク）を</span><span class="ph">その場で</span><span class="ph">作成・</span><span class="ph">印刷・PDF化</span></h3>
+          <p>A4横1枚のマイソクを物件マスタから自動生成。マーカーや囲み・文字入れで直接アピールでき、お客様用と業者用の2枚を出し分け。会社のひな型も保存できます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="linesms">
+        <div class="visual shot"><img src="assets/app-linestep.webp" alt="LINEステップ配信の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-14</span><span class="cat">LINE・SMS</span></div>
+          <h3><span class="ph">友だち追加や</span><span class="ph">タグを</span><span class="ph">起点に</span><span class="ph">自動配信。</span><span class="ph">契約2年後の</span><span class="ph">更新案内まで自動化</span></h3>
+          <p>「契約者」タグから640日後（入居1年9か月）に更新案内、来店前フォローなど、シナリオを一度作れば自動で配信。Instagram・チラシなど流入経路別の友だち化率も計測できます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="linesms">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2M10 7l2 2 3-3"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-15</span><span class="cat">LINE・SMS</span></div>
+          <h3><span class="ph">電話番号しかない</span><span class="ph">反響にも、</span><span class="ph">SMSとAIで</span><span class="ph">自動アプローチ</span></h3>
+          <p>新着反響へ自動SMSを送信し、メールはテンプレを決めた日数で順送り。テンプレを送り切ったあとはAIが文面を生成して追客を継続します。開封・URLクリックも計測。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="backoffice">
+        <div class="visual shot"><img src="assets/app-keiri.webp" alt="経理・PL管理の実画面（デモデータ）" loading="lazy"></div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-16</span><span class="cat">バックオフィス</span></div>
+          <h3><span class="ph">売上・</span><span class="ph">広告費・</span><span class="ph">人件費が</span><span class="ph">自動で</span><span class="ph">集まる</span><span class="ph">月次PL。</span><span class="ph">領収書は</span><span class="ph">AIが読み取り</span></h3>
+          <p>申込の入金と反響分析の広告費が自動でPLに反映（二重計上なし）。領収書・請求書は撮影するだけでAIが明細化し、経費申請→承認までアプリ内で完結します。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="backoffice">
+        <div class="visual" style="background:linear-gradient(135deg,#eef9f5,#dff2ec)">
+          <div class="ci" style="background:linear-gradient(180deg,#2bbfa3,#14a085)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-17</span><span class="cat">バックオフィス</span></div>
+          <h3><span class="ph">打刻から</span><span class="ph">給与明細まで。</span><span class="ph">歩合給も会社ごとの</span><span class="ph">設定で自動計算</span></h3>
+          <p>出退勤の打刻・シフト・有休の法定付与を管理し、勤怠と申込実績から給与を自動計算。スタッフは自分の給与明細をいつでもアプリで確認できます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="backoffice">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01"/><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-18</span><span class="cat">バックオフィス</span></div>
+          <h3><span class="ph">店舗・</span><span class="ph">個人・</span><span class="ph">グループの</span><span class="ph">社内チャット。</span><span class="ph">ChatWork・</span><span class="ph">Slackとも相互連携</span></h3>
+          <p>全社・店舗別・1対1のチャットにスタンプ・既読・返信機能。社外の業者が使うChatWork・Slackとも紐付けでき、ミエルームの画面だけでやり取りが完結します。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="performance">
+        <div class="visual" style="background:linear-gradient(135deg,#eef9f5,#dff2ec)">
+          <div class="ci" style="background:linear-gradient(180deg,#2bbfa3,#14a085)"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V10M11 21V4M16 21v-8M21 21V7"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-19</span><span class="cat">成績可視化</span></div>
+          <h3><span class="ph">全店舗の</span><span class="ph">売上・</span><span class="ph">反響・</span><span class="ph">ランキングを</span><span class="ph">1画面で。</span><span class="ph">AIが</span><span class="ph">経営サマリーを作成</span></h3>
+          <p>店舗別実績の比較・月次推移・目標未達アラートを本部視点で横断把握。AIが全店舗のデータを読んで、今月の状況と課題を文章でまとめます。</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="service">
+        <div class="visual" style="background:linear-gradient(135deg,#fdeee7,#fbe1d6)">
+          <div class="ci" style="background:linear-gradient(180deg,#f2a98f,#e07a5f)"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></div>
+        </div>
+        <div class="body">
+          <div class="ctop"><span class="cno">CASE-20</span><span class="cat">接客管理</span></div>
+          <h3><span class="ph">おすすめ物件を</span><span class="ph">まとめて</span><span class="ph">1本の</span><span class="ph">URLに。</span><span class="ph">お客様の</span><span class="ph">反応も見える</span></h3>
+          <p>複数の物件を提案リストにまとめてLINE・メールで送付。お客様はスマホで開くだけで、物件ごとのリアクションも取得。紹介ページはログイン不要・スマホ最適化済みです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow on-dark">START NOW</span>
+    <h2 style="margin-top:14px">気になる機能は、実際の画面でご確認いただけます。</h2>
+    <div class="cta-row">
+        <a class="btn btn-doc btn-lg" href="request.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>資料請求（無料）</a>
+      
+      <a class="btn btn-line-sub btn-lg" href="https://line-harness.teneramente0701.workers.dev/r/lp" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.3c0 4.1 3.6 7.5 8.5 8.1.3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c-.1.4-.4 1.5 1.3.8s8.9-5.2 12.1-9c2.2-2.4-1.2-10.3-12.7-10.3Z"/></svg>
+        LINEで相談する
+      </a>
+      <a class="btn btn-ghost btn-lg" href="https://app.mieroom.cloud/apply" target="_blank" rel="noopener">無料デモアカウント発行</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="name">ミ<b>エ</b>ルーム</div>
+        <p>賃貸仲介店舗のためのAI業務管理ツール。売上・反響・顧客・広告を、ひとつに。現場が、現場のために。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>機能・事例</h4>
+          <a href="features.html">機能一覧</a>
+          <a href="#filters">申込・入金管理</a>
+          <a href="#filters">反響分析</a>
+          <a href="#filters">成績可視化</a>
+        </div>
+        <div>
+          <h4>サービス</h4>
+          <a href="index.html">ホーム</a>
+          <a href="blog.html">ブログ</a>
+          <a href="index.html#faq">よくある質問</a>
+          <a href="request.html">資料請求</a>
+          <a href="https://line-harness.teneramente0701.workers.dev/r/lp" target="_blank" rel="noopener">お問い合わせ</a>
+        </div>
+        <div>
+          <h4>会社情報</h4>
+          <a href="https://teneramente.jp/company.html">運営会社</a>
+          <a href="https://teneramente.jp/privacy.html">プライバシーポリシー</a>
+          <a href="https://app.mieroom.cloud/terms" target="_blank" rel="noopener">利用規約</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 ミエルーム. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="btn btn-line" href="https://line-harness.teneramente0701.workers.dev/r/lp" target="_blank" rel="noopener">LINEで相談</a>
+  <a class="btn btn-doc" href="request.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>資料請求</a>
+</div>
+
+<script src="assets/site.js"></script>
+<script>
+// filter
+var chips=document.querySelectorAll('.fchip');
+var cards=document.querySelectorAll('.case-card');
+chips.forEach(function(c){c.addEventListener('click',function(){
+  chips.forEach(function(x){x.classList.remove('on')});
+  c.classList.add('on');
+  var cat=c.dataset.cat;
+  cards.forEach(function(card){
+    var show = cat==='all' || card.dataset.cat===cat;
+    card.classList.toggle('hide', !show);
+  });
+});});
+// 機能一覧（トップ）から features.html#payment のように来たら、そのカテゴリで絞り込む
+var h=(location.hash||'').slice(1);
+if(/^[a-z]+$/.test(h)){var t=document.querySelector('.fchip[data-cat="'+h+'"]');if(t)t.click();}
+</script>
+<script src="assets/milpage.js" async></script>
+<script src="/assets/analytics.js" defer data-analytics></script>
+</body>
+</html>

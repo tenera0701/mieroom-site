@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>資料請求ありがとうございます｜ミエルーム</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/bp-bg.js" defer></script>
+<link rel="stylesheet" href="assets/reserve.css">
+<style>
+/* 資料請求の送信後のページ: お礼 → 「資料はメールでお送りしました」→ すぐ下にオンライン説明の予約カレンダー
+   （2026-11-06 社長の指示で、その場のダウンロードをやめてメールで送る形に。資料は ATLAS の自動返信が添付して送る） */
+.ty-top,.ty-book,.ty-more{word-break:auto-phrase}
+.ty-top h1 .ph{display:inline-block}
+.ty-top{text-align:center;padding:50px 0 8px}
+.ty-top .logo{display:inline-flex;align-items:center;gap:10px;font-family:"Zen Kaku Gothic New";font-weight:900;font-size:24px}
+.ty-top .logo img{width:40px;height:40px}
+.ty-top .logo b{color:var(--blue)} .ty-top .logo i{font-style:normal;color:var(--peach-d)}
+.ty-top h1{font-size:clamp(24px,3.6vw,34px);font-weight:900;margin-top:20px;line-height:1.4}
+.ty-top p{font-size:15px;line-height:1.95;color:var(--ink-2);margin-top:12px}
+.ty-mail{display:flex;align-items:center;gap:14px;max-width:620px;margin:22px auto 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 20px;text-align:left}
+.ty-mail .ic{flex:none;width:46px;height:46px;border-radius:50%;background:var(--sky);color:var(--blue-d);display:grid;place-items:center}
+.ty-mail b{display:block;font-size:15.5px;font-weight:900;color:var(--ink);line-height:1.6}
+.ty-mail b span{overflow-wrap:anywhere}
+.ty-mail small{display:block;font-size:12.5px;color:var(--ink-3);margin-top:2px;line-height:1.7}
+.ty-book{background:linear-gradient(180deg,#eaf6f2,#e2f3ee);margin-top:36px;padding:46px 0 58px;text-align:center}
+.ty-book .hd{display:inline-flex;align-items:center;gap:10px;font-family:"Zen Kaku Gothic New";font-weight:900;font-size:15px;color:var(--blue-d)}
+.ty-book .hd::before,.ty-book .hd::after{content:"";width:16px;height:2px;background:var(--blue-d);transform:rotate(60deg)}
+.ty-book .hd::after{transform:rotate(-60deg)}
+.ty-book h2{font-size:clamp(22px,3.4vw,32px);font-weight:900;line-height:1.45;margin-top:12px}
+.ty-book h2 em{font-style:normal;color:var(--peach-d)}
+.ty-book p{font-size:14.5px;line-height:1.95;color:var(--ink-2);margin-top:12px}
+.ty-line{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:13.5px;color:var(--ink-2)}
+.ty-points{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.ty-points span{font-size:13px;font-weight:700;color:var(--blue-d);background:#fff;border:1px solid var(--sky-2);border-radius:999px;padding:6px 14px}
+.ty-foot{margin-top:34px;font-size:12.5px}
+.ty-foot a{color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+.ty-more{text-align:center;padding:40px 0 70px}
+.ty-more p{font-size:14px;color:var(--ink-2)}
+.ty-more .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+@media(max-width:640px){
+  .ty-top{padding:36px 0 4px}
+  .ty-mail{padding:13px 15px;gap:12px}
+  .ty-mail .ic{width:40px;height:40px}
+  .ty-book{margin-top:28px;padding:36px 0 44px}
+  .ty-line .btn{width:100%;justify-content:center}
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '28086413637650888');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=28086413637650888&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script src="https://app.mieroom.cloud/hp-t/pHyi13lwBdN9UKYof5hp8It5.js" async data-mieroom-hp></script>
+</head>
+<body>
+
+<section class="ty-top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="assets/logo-mark-sm.webp" alt=""><span><b>ミエ</b><i>ルーム</i></span></a>
+    <h1><span class="ph">資料請求</span><span class="ph">ありがとうございます。</span></h1>
+    <div class="ty-mail">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></span>
+      <div>
+        <b id="tyMailTo">概要資料（PDF）を、ご入力のメールアドレスにお送りします。</b>
+        <small>数分たっても届かないときは、迷惑メールのフォルダもご確認ください。</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ty-book" id="book">
+  <div class="wrap">
+    <span class="hd">続けて、日程をお選びください</span>
+    <h2>実際の画面を見ながら、<br><em>オンライン</em>で1時間ご説明します。</h2>
+    <p>今の業務の進め方やお困りのことをうかがいながら、ミエルームでどこまで楽になるかを一緒に確かめます。<br>ご予約は、明日以降の空いている日時から選べます。</p>
+    <div class="ty-points"><span>オンラインで完結</span><span>画面を見ながらご説明</span><span>オプションと費用もご案内</span></div>
+    <div id="mrReserve"></div>
+    <div class="ty-line">
+      <span>ご都合のよい日時が無いときは</span>
+      <a class="btn btn-line-sub" href="https://line-harness.teneramente0701.workers.dev/r/lp" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.3c0 4.1 3.6 7.5 8.5 8.1.3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c-.1.4-.4 1.5 1.3.8s8.9-5.2 12.1-9c2.2-2.4-1.2-10.3-12.7-10.3Z"/></svg>
+        LINEで日程を相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="ty-more">
+  <div class="wrap">
+    <p>実際の画面を、ご自身で触って確かめることもできます。</p>
+    <div class="cta-row">
+      <a class="btn btn-ghost" href="https://app.mieroom.cloud/apply" target="_blank" rel="noopener">デモアカウントを発行する</a>
+      <a class="btn btn-ghost" href="index.html">サイトTOPに戻る</a>
+    </div>
+    <p class="ty-foot"><a href="https://teneramente.jp/privacy.html">プライバシーポリシー</a>　<a href="https://app.mieroom.cloud/terms" target="_blank" rel="noopener">利用規約</a></p>
+  </div>
+</section>
+
+<script src="assets/reserve.js"></script>
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem('mr_doc_sent') === '1') {
+      sessionStorage.removeItem('mr_doc_sent');
+      if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'ミエルーム概要資料' });
+      (function g(n) { if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: 'mieroom_doc' }); else if (n > 0) setTimeout(function () { g(n - 1); }, 500); })(12);
+      window.__mrLead = 1;
+    }
+  } catch (x) {}
+})();
+/* オンライン説明の予約カレンダー。空き日時は ATLAS のカレンダーから取る（ATLAS の予約メニュー
+   「ミエルーム オンライン説明（1時間）」。公開キーは ATLAS の database.py の MIEROOM_MENU_KEY と同じ値）。
+   資料請求フォームで入れた会社名・お名前・連絡先は、このタブの中だけ（sessionStorage）で引き継ぐ */
+(function () {
+  var pf = null;
+  try { pf = JSON.parse(sessionStorage.getItem('mr_prefill') || 'null'); } catch (x) {}
+  // 送り先のメールアドレスを見せる(入力の誤りに気づけるように)。textContent で入れる
+  if (pf && pf.email) {
+    var to = document.getElementById('tyMailTo');
+    to.textContent = '概要資料（PDF）を、';
+    var em = document.createElement('span'); em.textContent = pf.email; to.appendChild(em);
+    to.appendChild(document.createTextNode(' にお送りします。'));
+  }
+  MieroomReserve.mount(document.getElementById('mrReserve'), {
+    api: 'https://web-production-2f388.up.railway.app/api/reserve-menu/nuhrqqXkzZ6zkLoE',
+    via: '資料請求のお礼ページ',
+    prefill: pf,
+    consented: !!pf,          // 資料請求のフォームでプライバシーポリシーに同意済み
+    privacyUrl: 'https://teneramente.jp/privacy.html',
+    onDone: function () {
+      try { sessionStorage.removeItem('mr_prefill'); } catch (x) {}
+      if (typeof fbq === 'function') fbq('track', 'Schedule', { content_name: 'ミエルーム オンライン説明' });
+      if (typeof gtag === 'function') gtag('event', 'schedule_meeting', { form: 'mieroom_online' });
+    }
+  });
+})();
+</script>
+<script src="assets/milpage.js" async></script>
+<script src="/assets/analytics.js" defer data-analytics></script>
+</body>
+</html>
